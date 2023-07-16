@@ -26,4 +26,14 @@ pembagian beberapa jenis tipe data di atas berdasarkan lebar cangkupan nilainya 
 | `int`     | sama dengan `int32` atau `int64` (tergantung nilainya)   |
 | `rune`    | sama dengan `int32`                                      |
 
-ketika membuat sebuah program, dianjurkan tidak sembarangan menggunakan tipe data variabel, karena bisa berdampak kepada alokasi memori
+ketika membuat sebuah program, dianjurkan tidak sembarangan menggunakan tipe data variabel, karena bisa berdampak kepada alokasi memori.
+
+2. tipe data `numeric` desimal
+
+|tipe data| keterangan|
+|----|----|
+|`float32`| cangkupannya -3.4e+38 to 3.4e+38 atau -3.4 kali 10 pangkat 38 sampai 3.4 kali 10 pangkat 38|
+|`float64`| cangkupannya -1.7e+308 to +1.7e+308 atau -1.7 kali 10 pangkat 308 sampai 1.7 kali 10 pangkat 308|
+
+
+> secara default, jika tidak di tentukan jenis tipe data-nya, maka secara default go akan menggunakan `float64`.

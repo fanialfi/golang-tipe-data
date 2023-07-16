@@ -52,6 +52,15 @@ func tanpaDecType(){
   fmt.Printf("variabel dua memiliki isi %d dan berjenis %s\n",dua,reflect.TypeOf(dua))
 }
 
+func float(){
+  var flt = 2.16 // secara default akan menggunakan tipe data float64
+  var flt32 float32 = 100.10
+
+  fmt.Printf("variabel flt berisi %.4f dan berjenis %s\n",flt,reflect.TypeOf(flt))
+  // fmt.Printf("variabel flt32 berisi %.4f dan berjenis %s\n",flt32,reflect.TypeOf(flt32))
+  fmt.Printf("variabel flt32 berisi %.4f dan berjenis %T\n",flt32,flt32)
+}
+
 func main(){
   fmt.Println("Tipe data non desimal uint")
   numNotDecUint()
@@ -61,8 +70,16 @@ func main(){
   fmt.Println("=================================")
   fmt.Println("tanpa deklarasi tipe data")
   tanpaDecType()
+  fmt.Println("==================================")
+  fmt.Println("==================================")
+  float()
 }
 
 /*
   template %d di atas digunakan untuk memformat tipe data berjenis non-desimal
+  template %f di atas digunakan untuk memformat tipe data berjenis desimal dengan 6 digit di belakang
+  jika ingin membatasi jumplah digit desimal yang dihasilkan, bisa dikontrol dengan menggunakan %.nf dimana n adalah jumplah number-nya, seperti kasus di atas diberikan nilai 4, maka digit desimal-nya hanya berisi 4
+  template format specifier %T merepresentasikan type data dari value, format specifier ini berada didalam package fmt, jadi jika ingin menggunakannnya, harus import package fmt terlebih dahulu
+
+  lebih lanjut mengenai format specifier di golang, bisa dibaca di https://pkg.go.dev/fmt
 */
