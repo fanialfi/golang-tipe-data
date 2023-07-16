@@ -41,3 +41,7 @@ ketika membuat sebuah program, dianjurkan tidak sembarangan menggunakan tipe dat
 3. tipe data boolean
 
 merupakan tipe data yang berisi kebenaran (`false` atau `true`), sering di manfaatkan dalam seleksi kondisi dan perulanan.
+
+4. tipe data string
+
+merupakan tipe data yang berisi sekumpulan karakter, dan disimpan didalam tanda kurung dua ("), atau _backtics_ (``), jika menggunakan _backtics_ ketika memerlukan sebuah enter, tab, dll, tidak perlu lagi menggunakan karakter _escape sequence_ 

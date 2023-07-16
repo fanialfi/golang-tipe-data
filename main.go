@@ -68,6 +68,17 @@ func boolean() {
 	fmt.Printf("variabel salah berisi %t dan bertipe %T\n", salah, salah)
 }
 
+func karakter() {
+	var namaSaya string = "fani alfirdaus"
+	var welcome string = `Hallo nama saya "fani alfirdaus"
+saya saat ini sedang 'belajar golang'
+salam kenal :)`
+
+	fmt.Printf("variabel namaSaya berisi %s dan berjenis %T\n", namaSaya, namaSaya)
+	fmt.Println(welcome)
+
+}
+
 func main() {
 	fmt.Println("Tipe data non desimal uint")
 	numNotDecUint()
@@ -83,6 +94,9 @@ func main() {
 	fmt.Println("==================================")
 	fmt.Println("==================================")
 	boolean()
+	fmt.Println("==================================")
+	fmt.Println("==================================")
+	karakter()
 }
 
 /*
