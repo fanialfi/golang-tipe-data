@@ -45,3 +45,23 @@ merupakan tipe data yang berisi kebenaran (`false` atau `true`), sering di manfa
 4. tipe data string
 
 merupakan tipe data yang berisi sekumpulan karakter, dan disimpan didalam tanda kurung dua ("), atau _backtics_ (``), jika menggunakan _backtics_ ketika memerlukan sebuah enter, tab, dll, tidak perlu lagi menggunakan karakter _escape sequence_ 
+
+5. nilai `nil` dan `zero` value
+
+`nil` bukanlah sebuah tipe data, melaikan sebuah value, variabel yang isinya `nill` artinya memiliki nilai kosong, atau di bahasa pemrograman `javascript` ada juga `null`.
+
+semua tipe data di atas memiliki `zero` value (nilai default jika sebuah variabel di deklarasikan tapi tidak bersamaan dengan nilainya).
+
+- `zero` value dari `string` adalah `""`
+- `zero` value dari `bool` adalah `false`
+- `zero` value dari `integer` adalah `0`
+- `zero` value dari `float` adalah `0.0`
+
+`nil` tidak bisa digunakan pada tipe data di atas, ada beberapa tipe yang bisa di set value nya dengan `nill` antara lain :
+
+- pointer
+- tipe data fungsi
+- slice
+- map
+- channel
+- interface kosong atau any
