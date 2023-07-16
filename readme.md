@@ -37,3 +37,7 @@ ketika membuat sebuah program, dianjurkan tidak sembarangan menggunakan tipe dat
 
 
 > secara default, jika tidak di tentukan jenis tipe data-nya, maka secara default go akan menggunakan `float64`.
+
+3. tipe data boolean
+
+merupakan tipe data yang berisi kebenaran (`false` atau `true`), sering di manfaatkan dalam seleksi kondisi dan perulanan.

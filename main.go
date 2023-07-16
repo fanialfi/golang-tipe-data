@@ -60,6 +60,13 @@ func float() {
 	// fmt.Printf("variabel flt32 berisi %.4f dan berjenis %s\n",flt32,reflect.TypeOf(flt32))
 	fmt.Printf("variabel flt32 berisi %.4f dan berjenis %T\n", flt32, flt32)
 }
+func boolean() {
+	var benar bool = true
+	var salah bool = false
+
+	fmt.Printf("variabel benar berisi %t dan bertipe %T\n", benar, benar)
+	fmt.Printf("variabel salah berisi %t dan bertipe %T\n", salah, salah)
+}
 
 func main() {
 	fmt.Println("Tipe data non desimal uint")
@@ -73,6 +80,9 @@ func main() {
 	fmt.Println("==================================")
 	fmt.Println("==================================")
 	float()
+	fmt.Println("==================================")
+	fmt.Println("==================================")
+	boolean()
 }
 
 /*
